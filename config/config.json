@@ -1,0 +1,15 @@
+{
+    "theme": {
+      "slug": "newrig",
+      "name": "New Rig",
+      "author": "Devian Kapp"   
+    },
+    "dev": {
+        "browserSync": {
+          "live": true,
+          "proxyURL": "localhost/kappscores_wprig",
+          "bypassPort": "8181",
+          "https": false
+        }
+    }
+  }
