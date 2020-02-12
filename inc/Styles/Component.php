@@ -357,8 +357,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$google_fonts = [
-			'Roboto Condensed' => [ '400', '400i', '700', '700i' ],
-			'Crimson Text'     => [ '400', '400i', '600', '600i' ],
+			'Source Sans Pro' => [ '300', '300i', '400', '400i', '700', '700i' ],
+			'Source Serif Pro'     => [ '400', '600', '700' ],
 		];
 
 		/**
