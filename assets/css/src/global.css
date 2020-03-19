@@ -83,7 +83,7 @@
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-areas:
 			"header header header header"
-			"main main main sidebar"
+			"sidebar main main main"
 			"footer footer footer footer";
 		grid-gap: 2rem;
 		justify-content: center;
