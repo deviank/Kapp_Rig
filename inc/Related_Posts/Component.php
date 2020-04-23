@@ -9,6 +9,14 @@ namespace WP_Rig\WP_Rig\Related_Posts;
 
 use WP_Rig\WP_Rig\Component_Interface;
 use WP_Rig\WP_Rig\Templating_Component_Interface;
+use function get_the_category;
+use function add_action;
+use function add_filter;
+use function wp_enqueue_script;
+use function get_theme_file_uri;
+use function get_theme_file_path;
+use function wp_script_add_data;
+use function wp_localize_script;
 
 
 /**
@@ -34,7 +42,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 * Adds the action and filter hooks to integrate with WordPress.
 	 */
 	public function initialize() {
-		;
+		add_action( 'wp_enqueue_scripts', [ $this, 'action_enqueue_navigation_script' ] );
 	}
 
 	/**
@@ -44,6 +52,25 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 *               a callable or an array with key 'callable'. This approach is used to reserve the possibility of
 	 *               adding support for further arguments in the future.
 	 */
+	/**
+	 * Return comma-separated list of current post category IDs.
+	 */
+	public function get_post_category_ids() {
+		$categories = get_the_category();
+		$cat_ids = [];
+
+		if ( ! empty( $categories ) ) {
+			foreach ( $categories as $category ) {
+				$cat_ids[] = $category->cat_ID;
+			}
+		}
+
+		return implode( ',', $cat_ids );
+	}
+
+
+
+
 	public function template_tags() : array {
 		return [
 			'display_related_posts' => [ $this, 'display_related_posts' ],
