@@ -88,7 +88,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		if ( is_single() ) {
 			wp_enqueue_script(
 				'wp-rig-related-posts',
-				get_theme_file_uri( '/assets/js/related.min.js' ),
+				get_theme_file_uri( '/assets/js/related.js' ),
 				array(),
 				wp_rig()->get_asset_version( get_theme_file_path( '/assets/js/related.min.js' ) ),
 				false
