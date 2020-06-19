@@ -321,7 +321,10 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				'preload_callback' => function() {
 					return wp_rig() -> is_footer_widgets_active();
 				},
-			],			
+			],
+			'wp-rig-related'   => [
+				'file'             => 'related.min.css',
+			],
 		];
 
 		/**
