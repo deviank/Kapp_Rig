@@ -45,7 +45,7 @@ class Component implements Component_Interface {
 				'wp_rig_custom_logo_args',
 				[
 					'height'      => 250,
-					'width'       => 550,
+					'width'       => 250,
 					'flex-width'  => false,
 					'flex-height' => false,
 				]
