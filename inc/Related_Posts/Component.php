@@ -60,6 +60,14 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	}
 
 	/**
+	 * Add custom image size
+	 */
+	public function action_add_image_sizes() {
+		add_image_size( 'wpRigRelated', 720, 460, true );
+	}
+
+
+	/**
 	 * Return comma-separated list of current post category IDs.
 	 */
 	public function get_post_category_ids() {
