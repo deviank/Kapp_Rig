@@ -10,11 +10,6 @@
       "proxyURL": "localhost/kappscores_wprig",
       "bypassPort": "8181",
       "https": false
-    },
-    "debug": {
-      "styles": false,
-      "scripts": false,
-      "phpcs": true
     }
   }
 }

@@ -18,6 +18,7 @@ use function get_theme_file_uri;
 use function get_theme_file_path;
 use function wp_script_add_data;
 use function wp_localize_script;
+use function add_image_size;
 
 /**
  * Class for related posts.
