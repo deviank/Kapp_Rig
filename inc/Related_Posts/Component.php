@@ -44,6 +44,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 */
 	public function initialize() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'action_enqueue_related_posts_script' ) );
+		add_action( 'after_setup_theme', array( $this, 'action_add_image_sizes' ) );
+
 	}
 
 	/**
