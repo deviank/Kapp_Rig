@@ -372,7 +372,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$google_fonts = [
-			'Roboto' => [ '400' ],
+			'Roboto' => [ '400', '500', '700' ],
 			'Source Serif Pro'     => [ '400', '600', '700' ],
 		];
 
