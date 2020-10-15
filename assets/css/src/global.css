@@ -85,7 +85,7 @@
 			"header header header header"
 			"main main main sidebar"
 			"footer footer footer footer";
-		grid-gap: 2rem;
+		grid-gap: 1rem;
 		justify-content: center;
 	}
 
